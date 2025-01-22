@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+Wancho&family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Marcellus&family=Noto+Sans+Wancho&family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Roboto&display=swap');
+
+/* UNIVERSAL STYLE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f1f0;
+}
+
+:root {
+    --heading-font:"Marcellus", serif
+    --paragraph-font: "Jost", San-serif;
+}
+
+/* HEADER STYLE */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 3em 1em;
+    border-bottom: 2px solid gainsboro;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-family: var(--heading-font);
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--paragraph-font);
+}
+
+.wishlist{
+    font-family: var(--paragraph-font);
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.wishlist i{
+    font-size: 1.5rem;
+}
+
+/* HERO SECTIOON STYLING */
+
+.hero-section{
+    padding: 2em;
+}
+
+.heading{
+    text-align: center;
+    margin: 3em 0;
+}
+
+.heading h1{
+    font-family: var(--heading-font);
+    font-weight: 100;
+    font-size: 5rem;
+
+}
+
+.heading p {
+    color: grey;
+    line-height: 1.5;
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+    margin-top: 1em;
+}
+
+.hero-image {
+    display: flex;
+    padding: 2em;
+    gap: 2em;
+}
+
+.hero-image img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.hero-image .img-1{
+    overflow: hidden;
+}
+
+.hero-image .img-1:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.hero-image h2{
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 1em;
+}
+
+.hero-image p {
+    color: black;
+    line-height: 1.5;
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+    margin-top: 1em;
+}
+
+.hero-image a p {
+    font-family: var(--paragraph-font);
+    color: black;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin-top: 0.5em;
+    border-bottom: 1px solid black;
+    display: inline-block;
+
+}
+
+/* PRODUCT SECTION */
+
+.Product-section{
+    background-color: white;
+    padding: 2em;
+    
+}
+
+.shipping{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.process{
+    text-align: center;
+}
+
+.process i{
+    font-size: 3rem;
+    color: gray;
+}
+
+.process h1{
+    font-family: var(--heading-font);
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 2rem;
+    margin-top: 1em;
+}
+
+.process p {
+    color: grey;
+    line-height: 1.5;
+    font-family: var(--paragraph-font);
+    font-size: 1.1rem;
+    margin-top: 1em;
+}
+
+.cart{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin: 4em 0em;
+}
+
+.new-cart{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    margin: 4em 0;
+}
+
+.cart-container{
+    margin: 4em;
+}
+
+
+.new-cart img{
+    width: 100%;
+}
+
+.cart-img-1 p{
+    color: grey;
+    font-family: var(--paragraph-font);
+    font-size: 1.1rem;
+    margin-top: 1em;
+}
+
+.new-cart .cart-img-1 p{
+    color: black;
+    font-size: 1.3rem;
+
+}
+
+.cart-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.single{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    background-color: gainsboro;
+    padding: 5em 5em;
+
+    
+}
+
+
+
+.single img{
+    max-width: 50rem;
+}
+
+.single-text h1{
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-bottom: 2em;
+    padding: 1em;
+    margin: 0;
+}
+
+.single-text p{
+    padding: 1em;
+    color: grey;
+}
+.single-text h2{
+    border:black;
+    font: 100;
+    color: white;
+    background-color: black;
+}
